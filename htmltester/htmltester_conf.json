@@ -1,0 +1,59 @@
+{
+  "pages": [
+    {
+      "name": "Basol",
+      "url": "https://basol.developpement-durable.gouv.fr/fiche.php?page=1&index_sp=31.0004",
+      "definition": [
+        {
+          "type": "text",
+          "selector": "span:nth-of-type(1)",
+          "name": "region"
+        },
+        {
+          "type": "text",
+          "selector": "span:nth-of-type(2)",
+          "name": "department"
+        },
+        {
+          "type": "text",
+          "selector": "span:nth-of-type(3)",
+          "name": "number"
+        },
+        {
+          "type": "date",
+          "selector": "span:nth-of-type(6)",
+          "name": "date"
+        },
+        {
+          "type": "text",
+          "selector": "span:nth-of-type(7)",
+          "name": "author"
+        },
+        {
+          "type": "text",
+          "selector": "span:nth-of-type(9)",
+          "name": "usual_name"
+        },
+        {
+          "type": "text",
+          "selector": "span:nth-of-type(10)",
+          "name": "commune"
+        }
+      ],
+      "tests": [
+        {
+          "name": "test 1",
+          "field": "region",
+          "operator": "==",
+          "expected_value": "Occitanie"
+        },
+        {
+          "name": "test 2",
+          "field": "number",
+          "operator": "==",
+          "expected_value": "31.0004"
+        }
+      ]
+    }
+  ]
+}
